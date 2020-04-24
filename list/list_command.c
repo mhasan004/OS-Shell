@@ -19,12 +19,12 @@ bool check_file_exists(const char file[] )
         return true;
     }
     else{
-		if (errno == ENOENT)
-			printf ("File %s does not exist\n", file);
-		if (errno == EACCES)
-			printf ("File %s is not accessible\n", file);
+        if (errno == ENOENT)
+            printf ("File %s does not exist\n", file);
+        if (errno == EACCES)
+            printf ("File %s is not accessible\n", file);
         return false;
-	} 
+    } 
     return false;
 }
 
