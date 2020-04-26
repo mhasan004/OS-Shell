@@ -1,4 +1,4 @@
-// GOAL:: make a execv command using child -. would print results to stdout. WIll use 'dupt' to paste the contents of stdout to a file instead
+// List command. By Mahmudul Hasan. 1) clear temrinal. 2) paste contents of "ls -l" to t1.txt and stdout. 3) change name of t1.tx tot tree.txt
 #include <stdlib.h>                                                 // system() to clear screen
 #include <stdio.h>                                                  // rename file using rename()
 #include <unistd.h>                                                 // sleep(), F_OK
