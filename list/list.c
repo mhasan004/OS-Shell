@@ -58,8 +58,7 @@ void execv_with_fork()
     }
 }
 
-int main()
-{
+void list(){
     // 1) Clear screen:
     clear_screen();                
 
@@ -70,6 +69,10 @@ int main()
     char old_name[] = "t1.txt";                                     // old file name  
     char new_name[] = "tree.txt";                                   // new file name
     change_fileName(old_name, new_name);
+}
 
+int main()
+{
+    list();
     return 0; 
 }
