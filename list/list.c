@@ -15,9 +15,9 @@ bool check_file_exists(const char file[] )
     }
     else{
         if (errno == ENOENT)
-            printf ("File %s does not exist\n", file);
+            printf ("\nFile %s does not exist\n", file);
         if (errno == EACCES)
-            printf ("File %s is not accessible\n", file);
+            printf ("\nFile %s is not accessible\n", file);
         return false;
     } 
     return false;
@@ -29,7 +29,7 @@ void change_fileName(const char *old_name, const char *new_name)
         int error_check = rename(old_name, new_name);               // if error_check == 0 -> no error 
     
         if(error_check == 0){ 
-            printf("%s", "\nFile name changed successfully!\n"); 
+            printf("%s %s %s %s %s", "\nFile name changed from", old_name, "to", new_name, "\n"); 
         } 
         else{ 
             perror("\nError changing file name!\n"); 
