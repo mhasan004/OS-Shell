@@ -6,11 +6,6 @@
 #include <sys/types.h>                                              // for pid_child, getpid(), etc
 #include <sys/wait.h>                                               // wait()
 
-
-void clear_screen(){
-    system("clear");                                                // clear screen
-}
-
 bool check_file_exists(const char file[] )
 {
     int return_val = access (file, F_OK);                           // -1 = file not found, error. 0 = no error, found file
@@ -60,8 +55,8 @@ void execv_with_fork()
 
 void list(){
     // 1) Clear screen:
-    clear_screen();                
-
+    system("clear");                                                // clear screen
+               
     // 2) Running command: ls -l
     execv_with_fork();
 
