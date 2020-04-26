@@ -1,0 +1,6 @@
+total 36
+drwxr-xr-x 2 hasan hasan  4096 Apr 25 21:00 Building List
+-rwxr-xr-x 1 hasan hasan 17592 Apr 25 21:05 list
+-rw-r--r-- 1 hasan hasan  4615 Apr 25 21:04 list.c
+drwxr-xr-x 2 hasan hasan  4096 Apr 24 02:07 Pictures
+-rw-r--r-- 1 hasan hasan     0 Apr 25 20:28 t1.txt
